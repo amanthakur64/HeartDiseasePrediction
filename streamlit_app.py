@@ -289,7 +289,7 @@ if ok2:
     else: 
         with st.container():
             st.write("---")
-            left_column,mid,right_column = st.columns(3)
+            left_column,right_column = st.columns(2)
 
             with right_column:
                 lottie_code= load_animation("https://assets3.lottiefiles.com/private_files/lf30_yABbl9.json")
