@@ -219,7 +219,7 @@ sleep=st.slider("Hours",0,24,1,key="sleep")
 
 st.write("##")
 st.write("How would you rate your overall health?")
-health=st.select_slider("Choose an option",options=["Poor","Fair","Good","Very Good","Excellent"],key="health")
+health=st.select_slider("Choose an option",options=["Poor","Fair","Good","Very good","Excellent"],key="health")
 
 
 ok2 = st.button("Check Your Heart's Health")
