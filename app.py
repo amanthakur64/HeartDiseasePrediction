@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_lottie
 import requests
 from streamlit_lottie import st_lottie
 import pickle
