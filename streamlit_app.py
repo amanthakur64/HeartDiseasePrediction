@@ -55,7 +55,8 @@ with st.container():
         st.write("However, this app is not to be taken as a substitute for a medical professional. It is just a tool to help you understand the likelihood of a heart disease")
 
     with right_column:
-        st_lottie(lottie_code,height=200,width=400,quality='high',key="tree")
+        st.write('##')
+        st_lottie(lottie_code,height=300,width=400,quality='high',key="tree")
 
 
 st.write("---")
@@ -249,11 +250,11 @@ if ok2:
     percentpred=model.predict_proba(df)
     with st.container():
         st.write("---")
-        left_column,mid,right_column = st.columns(3)
+        left_column,right_column = st.columns(2)
 
         with right_column:
             lottie_code= load_animation("https://assets5.lottiefiles.com/packages/lf20_GZVTNZ.json")
-            st_lottie(lottie_code,height=200,width=200,quality='high',key="heart_load")
+            st_lottie(lottie_code,height=200,width=375,quality='high',key="heart_load")
 
         with left_column:
             st.header("Calculating...")
@@ -269,11 +270,11 @@ if ok2:
     if pred[0]==0:
         with st.container():
             st.write("---")
-            left_column,mid,right_column = st.columns(3)
+            left_column,right_column = st.columns(2)
 
             with right_column:
                 lottie_code= load_animation("https://assets2.lottiefiles.com/packages/lf20_afs4kbqm.json")
-                st_lottie(lottie_code,height=200,width=200,quality='high',key='good')
+                st_lottie(lottie_code,height=200,width=375,quality='high',key='good')
 
             with left_column:
                 st.subheader("Your Heart's Health is Good!")
@@ -292,7 +293,7 @@ if ok2:
 
             with right_column:
                 lottie_code= load_animation("https://assets3.lottiefiles.com/private_files/lf30_yABbl9.json")
-                st_lottie(lottie_code,height=200,width=200,quality='high',key="bad")
+                st_lottie(lottie_code,height=200,width=375,quality='high',key="bad")
 
             with left_column:
                 st.subheader("Uh oh! Your Heart's Health is not Good!")
