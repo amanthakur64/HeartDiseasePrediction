@@ -1,5 +1,4 @@
 import streamlit as st
-pip install streamlit-lottie
 import streamlit_lottie
 import requests
 from streamlit_lottie import st_lottie
