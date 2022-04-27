@@ -13,7 +13,7 @@ import time
 st.set_page_config(page_title="Heart Disease Prediction", page_icon="heart",layout="centered")
 
 
-with open('C:\\Users\\amant\\Desktop\\Edu\\Codes\\PRML\\BonusProject\\saved_model.pkl', 'rb') as file:
+with open('saved_model.pkl', 'rb') as file:
     data=pickle.load(file)
 
 model=data['model']
