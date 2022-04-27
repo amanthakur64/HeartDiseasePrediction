@@ -52,7 +52,7 @@ with st.container():
     with left_column:
         st.header("How it Works")
         st.write("Behind the web application, a machine learning model (Gradient boosting on Decision Trees) that has been trained on over 300,000 instances of survey data collected by the United States' CDC predicts the likelihood of a person having a heart disease.")
-
+        st.write("However, this app is not to be taken as a substitute for a medical professional. It is just a tool to help you understand the likelihood of a heart disease")
 
     with right_column:
         st_lottie(lottie_code,height=200,width=400,quality='high',key="tree")
@@ -86,7 +86,7 @@ else:
 st.write("##")
 age=st.select_slider("What is your Age Group?",options=["18-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80 or older"])
 height=st.slider("What is your Height in cm?",1,250,1)
-weight=st.slider("What is your Weight in kg?",1,250,1)
+weight=st.slider("What is your Weight in Kg?",1,250,1)
 bmi=weight/((height/100)**2)
 
 ok1 = st.button("Check your BMI")
