@@ -302,7 +302,7 @@ if ok2:
     time.sleep(2)
     st.write("---")
     github_icon=("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png")
-    github_link=("https://github.com/amanthakur64")
+    github_link=("https://github.com/amanthakur64/HeartDiseasePrediction")
     st.markdown(f"""<a href={github_link}><img src={github_icon} alt="drawing" width="50"/></a>""",unsafe_allow_html=True,)
 
 
